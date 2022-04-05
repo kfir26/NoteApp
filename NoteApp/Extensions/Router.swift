@@ -4,6 +4,7 @@
 //
 //  Created by כפיר פנירי on 31/03/2022.
 //
+//
 
 import UIKit
 import FirebaseAuth
@@ -28,13 +29,12 @@ class Router {
             
             return
         }
-        
+
         let fileName = isLoggedIn ? "Main" : "Login"
         let sb = UIStoryboard(name: fileName, bundle: .main)
         
         window?.rootViewController = sb.instantiateInitialViewController()
         
-        
     }
-    
+
 }

@@ -4,7 +4,6 @@
 //
 //  Created by כפיר פנירי on 31/03/2022.
 //
-//
 
 import UIKit
 import FirebaseAuth

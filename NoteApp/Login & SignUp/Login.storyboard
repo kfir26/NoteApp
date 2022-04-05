@@ -36,7 +36,7 @@
                                     <constraint firstAttribute="width" secondItem="spW-MB-qg2" secondAttribute="height" multiplier="120:17" id="d33-Mj-ISA"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" textContentType="password"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f98-ea-dUO">
                                 <rect key="frame" x="118" y="396" width="240" height="34"/>
@@ -168,7 +168,7 @@
                                     <constraint firstAttribute="height" constant="33" id="QIr-bE-Pf0"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" textContentType="password"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2KH-ef-c4Q">
                                 <rect key="frame" x="111.99999999999999" y="392.33333333333331" width="239.66666666666663" height="34.333333333333314"/>
