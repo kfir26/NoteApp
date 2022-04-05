@@ -3,10 +3,17 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5D6B5C4D38EFCC302BB1A032 /* Pods_NoteApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD5EA2AEC7DDA629E358C9DD /* Pods_NoteApp.framework */; };
+		7F1A17DC27F1F82700569773 /* NoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1A17DB27F1F82700569773 /* NoteCell.swift */; };
+		7F1A17DF27F1F85900569773 /* NoteTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1A17DE27F1F85900569773 /* NoteTableView.swift */; };
+		7F1A17E227F1F89600569773 /* NoteDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1A17E127F1F89600569773 /* NoteDetailVC.swift */; };
+		7F1A17E727F1FD9200569773 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1A17E627F1FD9200569773 /* Note.swift */; };
+		7F1A17F727F3305200569773 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1A17F627F3305200569773 /* LocationViewController.swift */; };
+		7F1A189027F4801300569773 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7F1A188F27F4801300569773 /* GoogleService-Info.plist */; };
 		7F40A35A27EFB33A00DAC110 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F40A35927EFB33A00DAC110 /* AppDelegate.swift */; };
 		7F40A35C27EFB33A00DAC110 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F40A35B27EFB33A00DAC110 /* SceneDelegate.swift */; };
 		7F40A35E27EFB33A00DAC110 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F40A35D27EFB33A00DAC110 /* ViewController.swift */; };
@@ -14,9 +21,29 @@
 		7F40A36427EFB33A00DAC110 /* NoteApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7F40A36227EFB33A00DAC110 /* NoteApp.xcdatamodeld */; };
 		7F40A36627EFB34300DAC110 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F40A36527EFB34300DAC110 /* Assets.xcassets */; };
 		7F40A36927EFB34300DAC110 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F40A36727EFB34300DAC110 /* LaunchScreen.storyboard */; };
+		7F40A37327EFC00000DAC110 /* APIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F40A37227EFC00000DAC110 /* APIHandler.swift */; };
+		7F40A37827EFC15A00DAC110 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F40A37727EFC15A00DAC110 /* User.swift */; };
+		7F40A37C27EFC1E300DAC110 /* UserServerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F40A37B27EFC1E300DAC110 /* UserServerModel.swift */; };
+		7F40A37F27EFC23E00DAC110 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F40A37E27EFC23E00DAC110 /* CoreDataManager.swift */; };
+		7F40A38227EFC29100DAC110 /* DatabaseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F40A38127EFC29100DAC110 /* DatabaseHandler.swift */; };
+		7F40A38F27EFCC9B00DAC110 /* 20180-guy-typing.json in Resources */ = {isa = PBXBuildFile; fileRef = 7F40A38D27EFCC9B00DAC110 /* 20180-guy-typing.json */; };
+		7F40A39027EFCC9B00DAC110 /* 41627-boat.json in Resources */ = {isa = PBXBuildFile; fileRef = 7F40A38E27EFCC9B00DAC110 /* 41627-boat.json */; };
+		7F40A39327EFCCCC00DAC110 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F40A39227EFCCCC00DAC110 /* MainViewController.swift */; };
+		7F40A39627EFDEFA00DAC110 /* UserDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F40A39527EFDEFA00DAC110 /* UserDetailsViewController.swift */; };
+		7FEDB11127F609A200F72414 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FEDB11027F609A200F72414 /* LoginViewController.swift */; };
+		7FEDB14127F60E9B00F72414 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FEDB14027F60E9B00F72414 /* RegisterViewController.swift */; };
+		7FEDB17C27F61BD400F72414 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FEDB17B27F61BD400F72414 /* Router.swift */; };
+		7FEDB1BB27F634EE00F72414 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FEDB1BA27F634EE00F72414 /* Login.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		21625937DC173EDDFC525701 /* Pods-NoteApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoteApp.debug.xcconfig"; path = "Target Support Files/Pods-NoteApp/Pods-NoteApp.debug.xcconfig"; sourceTree = "<group>"; };
+		7F1A17DB27F1F82700569773 /* NoteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteCell.swift; sourceTree = "<group>"; };
+		7F1A17DE27F1F85900569773 /* NoteTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteTableView.swift; sourceTree = "<group>"; };
+		7F1A17E127F1F89600569773 /* NoteDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailVC.swift; sourceTree = "<group>"; };
+		7F1A17E627F1FD9200569773 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		7F1A17F627F3305200569773 /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
+		7F1A188F27F4801300569773 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7F40A35627EFB33A00DAC110 /* NoteApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoteApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F40A35927EFB33A00DAC110 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7F40A35B27EFB33A00DAC110 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +53,21 @@
 		7F40A36527EFB34300DAC110 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7F40A36827EFB34300DAC110 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7F40A36A27EFB34300DAC110 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F40A37227EFC00000DAC110 /* APIHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIHandler.swift; sourceTree = "<group>"; };
+		7F40A37727EFC15A00DAC110 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		7F40A37B27EFC1E300DAC110 /* UserServerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserServerModel.swift; sourceTree = "<group>"; };
+		7F40A37E27EFC23E00DAC110 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		7F40A38127EFC29100DAC110 /* DatabaseHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseHandler.swift; sourceTree = "<group>"; };
+		7F40A38D27EFCC9B00DAC110 /* 20180-guy-typing.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "20180-guy-typing.json"; sourceTree = "<group>"; };
+		7F40A38E27EFCC9B00DAC110 /* 41627-boat.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "41627-boat.json"; sourceTree = "<group>"; };
+		7F40A39227EFCCCC00DAC110 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		7F40A39527EFDEFA00DAC110 /* UserDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsViewController.swift; sourceTree = "<group>"; };
+		7FEDB11027F609A200F72414 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		7FEDB14027F60E9B00F72414 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		7FEDB17B27F61BD400F72414 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		7FEDB1BA27F634EE00F72414 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		D4139464E7AD3F682C13C58F /* Pods-NoteApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoteApp.release.xcconfig"; path = "Target Support Files/Pods-NoteApp/Pods-NoteApp.release.xcconfig"; sourceTree = "<group>"; };
+		FD5EA2AEC7DDA629E358C9DD /* Pods_NoteApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NoteApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +75,48 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D6B5C4D38EFCC302BB1A032 /* Pods_NoteApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7F1A17F327F27D5400569773 /* Note */ = {
+			isa = PBXGroup;
+			children = (
+				7F1A17DB27F1F82700569773 /* NoteCell.swift */,
+				7F1A17DE27F1F85900569773 /* NoteTableView.swift */,
+				7F1A17E127F1F89600569773 /* NoteDetailVC.swift */,
+			);
+			path = Note;
+			sourceTree = "<group>";
+		};
+		7F1A17F527F3302200569773 /* UserLocation */ = {
+			isa = PBXGroup;
+			children = (
+				7F1A17F627F3305200569773 /* LocationViewController.swift */,
+			);
+			path = UserLocation;
+			sourceTree = "<group>";
+		};
+		7F1A17FA27F456A000569773 /* Login & SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				7FEDB11027F609A200F72414 /* LoginViewController.swift */,
+				7FEDB14027F60E9B00F72414 /* RegisterViewController.swift */,
+				7FEDB1BA27F634EE00F72414 /* Login.storyboard */,
+			);
+			path = "Login & SignUp";
+			sourceTree = "<group>";
+		};
 		7F40A34D27EFB33A00DAC110 = {
 			isa = PBXGroup;
 			children = (
 				7F40A35827EFB33A00DAC110 /* NoteApp */,
 				7F40A35727EFB33A00DAC110 /* Products */,
+				D67F45BDDCD4BEBF4436D2C1 /* Pods */,
+				7F9220ABF8CA0A65ECB96270 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,16 +131,88 @@
 		7F40A35827EFB33A00DAC110 /* NoteApp */ = {
 			isa = PBXGroup;
 			children = (
+				7FEDB17A27F61BA800F72414 /* Extensions */,
+				7F40A38B27EFCBEC00DAC110 /* Animations */,
+				7F1A17FA27F456A000569773 /* Login & SignUp */,
+				7F40A38427EFC5BF00DAC110 /* MainControllers */,
+				7F40A37627EFC14C00DAC110 /* CoreData & Model */,
+				7F40A37127EFBFBD00DAC110 /* ApiHandler */,
+				7F1A17F327F27D5400569773 /* Note */,
+				7F1A17F527F3302200569773 /* UserLocation */,
 				7F40A35927EFB33A00DAC110 /* AppDelegate.swift */,
 				7F40A35B27EFB33A00DAC110 /* SceneDelegate.swift */,
-				7F40A35D27EFB33A00DAC110 /* ViewController.swift */,
 				7F40A35F27EFB33A00DAC110 /* Main.storyboard */,
 				7F40A36527EFB34300DAC110 /* Assets.xcassets */,
 				7F40A36727EFB34300DAC110 /* LaunchScreen.storyboard */,
 				7F40A36A27EFB34300DAC110 /* Info.plist */,
+				7F1A188F27F4801300569773 /* GoogleService-Info.plist */,
 				7F40A36227EFB33A00DAC110 /* NoteApp.xcdatamodeld */,
 			);
 			path = NoteApp;
+			sourceTree = "<group>";
+		};
+		7F40A37127EFBFBD00DAC110 /* ApiHandler */ = {
+			isa = PBXGroup;
+			children = (
+				7F40A37227EFC00000DAC110 /* APIHandler.swift */,
+			);
+			path = ApiHandler;
+			sourceTree = "<group>";
+		};
+		7F40A37627EFC14C00DAC110 /* CoreData & Model */ = {
+			isa = PBXGroup;
+			children = (
+				7F1A17E627F1FD9200569773 /* Note.swift */,
+				7F40A37727EFC15A00DAC110 /* User.swift */,
+				7F40A37B27EFC1E300DAC110 /* UserServerModel.swift */,
+				7F40A37E27EFC23E00DAC110 /* CoreDataManager.swift */,
+				7F40A38127EFC29100DAC110 /* DatabaseHandler.swift */,
+			);
+			path = "CoreData & Model";
+			sourceTree = "<group>";
+		};
+		7F40A38427EFC5BF00DAC110 /* MainControllers */ = {
+			isa = PBXGroup;
+			children = (
+				7F40A35D27EFB33A00DAC110 /* ViewController.swift */,
+				7F40A39227EFCCCC00DAC110 /* MainViewController.swift */,
+				7F40A39527EFDEFA00DAC110 /* UserDetailsViewController.swift */,
+			);
+			path = MainControllers;
+			sourceTree = "<group>";
+		};
+		7F40A38B27EFCBEC00DAC110 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				7F40A38D27EFCC9B00DAC110 /* 20180-guy-typing.json */,
+				7F40A38E27EFCC9B00DAC110 /* 41627-boat.json */,
+			);
+			path = Animations;
+			sourceTree = "<group>";
+		};
+		7F9220ABF8CA0A65ECB96270 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FD5EA2AEC7DDA629E358C9DD /* Pods_NoteApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7FEDB17A27F61BA800F72414 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7FEDB17B27F61BD400F72414 /* Router.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D67F45BDDCD4BEBF4436D2C1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				21625937DC173EDDFC525701 /* Pods-NoteApp.debug.xcconfig */,
+				D4139464E7AD3F682C13C58F /* Pods-NoteApp.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,9 +222,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7F40A36D27EFB34300DAC110 /* Build configuration list for PBXNativeTarget "NoteApp" */;
 			buildPhases = (
+				994645A41A8B2712D5444BAE /* [CP] Check Pods Manifest.lock */,
 				7F40A35227EFB33A00DAC110 /* Sources */,
 				7F40A35327EFB33A00DAC110 /* Frameworks */,
 				7F40A35427EFB33A00DAC110 /* Resources */,
+				636D5AC40C05420BBEA58C2B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -128,22 +275,83 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F40A36927EFB34300DAC110 /* LaunchScreen.storyboard in Resources */,
+				7F1A189027F4801300569773 /* GoogleService-Info.plist in Resources */,
+				7FEDB1BB27F634EE00F72414 /* Login.storyboard in Resources */,
 				7F40A36627EFB34300DAC110 /* Assets.xcassets in Resources */,
+				7F40A38F27EFCC9B00DAC110 /* 20180-guy-typing.json in Resources */,
 				7F40A36127EFB33A00DAC110 /* Main.storyboard in Resources */,
+				7F40A39027EFCC9B00DAC110 /* 41627-boat.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		636D5AC40C05420BBEA58C2B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NoteApp/Pods-NoteApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NoteApp/Pods-NoteApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NoteApp/Pods-NoteApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		994645A41A8B2712D5444BAE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NoteApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7F40A35227EFB33A00DAC110 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FEDB17C27F61BD400F72414 /* Router.swift in Sources */,
+				7F1A17DF27F1F85900569773 /* NoteTableView.swift in Sources */,
+				7FEDB14127F60E9B00F72414 /* RegisterViewController.swift in Sources */,
+				7F1A17E227F1F89600569773 /* NoteDetailVC.swift in Sources */,
 				7F40A35E27EFB33A00DAC110 /* ViewController.swift in Sources */,
 				7F40A35A27EFB33A00DAC110 /* AppDelegate.swift in Sources */,
+				7F40A37827EFC15A00DAC110 /* User.swift in Sources */,
+				7F1A17E727F1FD9200569773 /* Note.swift in Sources */,
+				7F1A17DC27F1F82700569773 /* NoteCell.swift in Sources */,
+				7F40A38227EFC29100DAC110 /* DatabaseHandler.swift in Sources */,
+				7FEDB11127F609A200F72414 /* LoginViewController.swift in Sources */,
+				7F40A37327EFC00000DAC110 /* APIHandler.swift in Sources */,
 				7F40A35C27EFB33A00DAC110 /* SceneDelegate.swift in Sources */,
+				7F40A37C27EFC1E300DAC110 /* UserServerModel.swift in Sources */,
+				7F40A37F27EFC23E00DAC110 /* CoreDataManager.swift in Sources */,
+				7F40A39627EFDEFA00DAC110 /* UserDetailsViewController.swift in Sources */,
 				7F40A36427EFB33A00DAC110 /* NoteApp.xcdatamodeld in Sources */,
+				7F40A39327EFCCCC00DAC110 /* MainViewController.swift in Sources */,
+				7F1A17F727F3305200569773 /* LocationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +495,7 @@
 		};
 		7F40A36E27EFB34300DAC110 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21625937DC173EDDFC525701 /* Pods-NoteApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -305,6 +514,7 @@
 		};
 		7F40A36F27EFB34300DAC110 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4139464E7AD3F682C13C58F /* Pods-NoteApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
